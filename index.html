@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Form</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="body_Login">
+
+                <!-- Login -->
+                
+                <div class="hero container login-container">
+                  <div class="container_Login">
+                      <input id="register_toggle" type="checkbox">
+                      <div class="slider_Login">
+                        <form class="form_Login" name="myform" method="post" action="About.html" onsubmit="return validateform()">
+                          <h1 class="mess1">LOG IN TO SEE THE SURPRISE</h1>
+                          <span class="title_Login">Login</span>
+                          <div class="form_control_Login">
+                            <input required="" class="input_Login" type="text">
+                            <label class="label_Login">Username</label>
+                          </div>
+                          <div class="form_control_Login">
+                            <input required="" class="input_Login" type="password">
+                            <label class="label_Login">Password</label>
+                          </div>
+                          <button class="button_Login" onclick="submitLoginForm()">Login</button>
+                    
+                          <span class="bottom_text_Login">Don't have an account? <label class="swtich_Login" for="register_toggle">Sign Up</label> </span>
+                        </form>
+                        <form class="form_Login">
+                          <span class="title_Login">Sign Up</span>
+                          <div class="form_control_Login">
+                            <input required="" class="input_Login" type="text">
+                            <label class="label_Login">Username</label>
+                          </div>
+                          <div class="form_control_Login">
+                            <input required="" class="input_Login" type="email">
+                            <label class="label_Login">Email</label>
+                          </div>
+                          <div class="form_control_Login">
+                            <input required="" class="input_Login" type="password">
+                            <label class="label_Login">Password</label>
+                          </div>
+                          <button class="button_Login" onclick="submitLoginForm()">Login</button>
+                    
+                          <span class="bottom_text_Login">Already have an account? <label class="swtich_Login" for="register_toggle">Sign In</label> </span>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- End Login -->
+          
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1>_____________________________________________</h1>
+      </div>
+      <p>Copyright © 2023 . All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="myscript.js"></script>
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

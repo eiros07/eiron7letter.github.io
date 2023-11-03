@@ -1,0 +1,201 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+#footer {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+#footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#footer .social-icon {
+	display: flex;
+	margin-bottom: 30px;
+}
+#footer .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+}
+#footer .social-item img {
+	filter: grayscale(1);
+	transition: 0.3s ease filter;
+}
+#footer .social-item:hover img {
+	filter: grayscale(0);
+}
+#footer p {
+	color: white;
+	font-size: 1.3rem;
+}
+/* End Footer */
+
+
+
+
+/* Login */
+.mess1{
+	color: #000000;
+}
+.body_Login {
+	color: transparent;
+	background-image: url(images/bday1.jpeg) ;
+	background-color: rgba(66, 60, 60, 0.5);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+.login-container {
+	margin-left: 40;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+
+.container_Login {
+	width: 300px;
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+  }
+  
+  .container_Login .slider_Login {
+	width: 200%;
+	position: relative;
+	transition: transform ease-out 0.3s;
+	display: flex;
+  }
+  
+  #register_toggle_Login {
+	display: none;
+  }
+  
+  .container_Login #register_toggle:checked + .slider_Login {
+	transform: translateX(-50%);
+  }
+  
+  .form_Login {
+	margin: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	padding: 1.5em 3em;
+	width: 50%;
+  }
+  
+  .title_Login {
+	text-align: center;
+	font-weight: 700;
+	font-size: 2em;
+	color: #000000;
+  }
+  
+  .form_Login .form_control_Login {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .form_Login .form_control_Login .label_Login {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transition: transform ease 0.2s;
+	transform: translate(0%, -50%);
+	font-size: 20px;
+	user-select: none;
+	pointer-events: none;
+	color: #b0b0b0;
+  }
+  
+  .form_Login .form_control_Login .input_Login {
+	width: 100%;
+	height: 60px;
+	border: none;
+	outline: none;
+	color: #000000;
+	padding: 0.5rem;
+	font-size: 20px;
+	border-radius: 5px;
+	transition: box-shadow ease 0.2s;
+	box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+  }
+  
+  .form_Login .form_control_Login .input_Login_Login:focus,
+  .form_Login .form_control_Login .input_Login_Login:valid {
+	box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 3px 3px 4px #0e0e0e, inset -3px -3px 4px #5f5e5e;
+  }
+  
+  .form_Login .form_control_Login .input_Login:focus + .label_Login,
+  .form_Login .form_control_Login .input_Login:valid + .label_Login {
+	transform: translate(-150%, -50%);
+	
+  }
+  
+  .form_Login .button_Login {
+	width: 100%;
+	height: 4em;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #301e1e;
+	padding: 0.5rem;
+	font-size: 1.5em;
+	border-radius: 5px;
+	transition: box-shadow ease 0.1s;
+	box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+  }
+  .form_Login .button_Login:hover {
+	cursor: pointer;
+	background-color: lightblue;
+  }
+  
+  .form .button_Login:active {
+	box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 3px 3px 4px #0e0e0e, inset -3px -3px 4px #5f5e5e;
+  }
+  
+  .bottom_text_Login {
+	font-size: 0.70em;
+	color: #030303;
+  }
+  
+  .bottom_text_Login .swtich_Login {
+	font-weight: 700;
+	cursor: pointer;
+  }
+/* End Login*/
